@@ -28,6 +28,7 @@ app.post('/send-email', (req, res) => {
     html: `<h1>Congrats! Your account has been successfully verified.</h1><p>Here are your credentials:</p><ul><li>Username: ${username}</li><li>Password: ${password}</li></ul><p><img src="https://firebasestorage.googleapis.com/v0/b/golfapp-37b8c.appspot.com/o/users%2Fuploads%2FASC-EPTA-7%20(1).webp?alt=media&token=939c0668-43ed-42c8-94eb-c3bdd7b82313"/>`,
     
   };
+
   
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
